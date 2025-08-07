@@ -23,7 +23,7 @@ const __dirname = path.resolve();
 // CORS configuration
 const corsOptions = {
 	origin: process.env.NODE_ENV === "production" 
-		? [process.env.CLIENT_URL]
+		? [process.env.CLIENT_URL, process.env.FRONTEND_URL].filter(Boolean)
 		: ["http://localhost:5173", "http://localhost:3000"],
 	credentials: true,
 	optionsSuccessStatus: 200
