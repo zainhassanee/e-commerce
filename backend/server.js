@@ -21,6 +21,7 @@ connectDB();
 
 // CORS configuration with explicit allowlist and preflight support
 const allowedOrigins = [
+  "https://e-commerce-front-pi.vercel.app/"
   process.env.CLIENT_URL,
   process.env.FRONTEND_URL,
   "http://localhost:5173",
